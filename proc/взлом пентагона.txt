@@ -1,0 +1,122 @@
+#include <Windows.h>
+#include <stdlib.h>
+#include <math.h>
+int main(void)
+{
+	HDC hDC = GetDC(GetConsoleWindow());
+	HPEN Pen = CreatePen(PS_DASHDOTDOT, 0.5, RGB(240, 248, 255));
+	SelectObject(hDC, Pen);
+	{//1
+		MoveToEx(hDC, 105, 400, NULL);
+		LineTo(hDC, 105, 300);
+		LineTo(hDC, 60, 300);
+		LineTo(hDC, 60, 270);
+		LineTo(hDC, 180, 270);
+		LineTo(hDC, 180, 300);
+		LineTo(hDC, 135, 300);
+		LineTo(hDC, 135, 400);
+		LineTo(hDC, 105, 400);
+	}
+	{//2
+		MoveToEx(hDC, 200, 400, NULL);
+		LineTo(hDC, 200, 270);
+		LineTo(hDC, 220, 270);
+		LineTo(hDC, 220, 340);
+		LineTo(hDC, 270, 340);
+		LineTo(hDC, 270, 400);
+		LineTo(hDC, 200, 400);
+		{
+			MoveToEx(hDC, 230, 385, NULL);
+			LineTo(hDC, 230, 355);
+			LineTo(hDC, 250, 355);
+			LineTo(hDC, 250, 385);
+			LineTo(hDC, 230, 385);
+		}
+		{
+			MoveToEx(hDC, 300, 400, NULL);
+			LineTo(hDC, 300, 270);
+			LineTo(hDC, 320, 270);
+			LineTo(hDC, 320, 400);
+			LineTo(hDC, 300, 400);
+		}
+	}
+	{//3
+		MoveToEx(hDC, 370, 400, NULL);
+		LineTo(hDC, 370, 270);
+		LineTo(hDC, 470, 270);
+		LineTo(hDC, 470, 400);
+		LineTo(hDC, 440, 400);
+		LineTo(hDC, 440, 300);
+		LineTo(hDC, 400, 300);
+		LineTo(hDC, 400, 400);
+		LineTo(hDC, 370, 400);
+	}
+	{//4
+		MoveToEx(hDC, 500, 400, NULL);
+		LineTo(hDC, 500, 270);
+		LineTo(hDC, 520, 270);
+		LineTo(hDC, 580, 380);
+		LineTo(hDC, 580, 270);
+		LineTo(hDC, 600, 270);
+		LineTo(hDC, 600, 400);
+		LineTo(hDC, 580, 400);
+		LineTo(hDC, 520, 290);
+		LineTo(hDC, 520, 400);
+		LineTo(hDC, 500, 400);
+	}
+	{//5
+		MoveToEx(hDC, 620, 400, NULL);
+		LineTo(hDC, 620, 360);
+		LineTo(hDC, 660, 360);
+		LineTo(hDC, 660, 270);
+		LineTo(hDC, 720, 270);
+		LineTo(hDC, 720, 360);
+		LineTo(hDC, 760, 360);
+		LineTo(hDC, 760, 400);
+		LineTo(hDC, 740, 400);
+		LineTo(hDC, 740, 380);
+		LineTo(hDC, 640, 380);
+		LineTo(hDC, 640, 400);
+		LineTo(hDC, 620, 400);
+		{
+			MoveToEx(hDC, 670, 360, NULL);
+			LineTo(hDC, 710, 360);
+			LineTo(hDC, 710, 280);
+			LineTo(hDC, 670, 280);
+			LineTo(hDC, 670, 360);
+		}
+	}
+	{//6
+	MoveToEx(hDC, 780, 400, NULL);
+	LineTo(hDC, 780, 270);
+	LineTo(hDC, 880, 270);
+	LineTo(hDC, 880, 400);
+	LineTo(hDC, 780, 400);
+	{
+		MoveToEx(hDC, 795, 385, NULL);
+		LineTo(hDC, 795, 285);
+		LineTo(hDC, 865, 285);
+		LineTo(hDC, 865, 385);
+		LineTo(hDC, 795, 385);
+	}
+	}
+	{//7
+		MoveToEx(hDC, 900, 400, NULL);
+		LineTo(hDC, 900, 270);
+		LineTo(hDC, 980, 270);
+		LineTo(hDC, 980, 335);
+		LineTo(hDC, 920, 335);
+		LineTo(hDC, 920, 400);
+		LineTo(hDC, 900, 400);
+		{
+			MoveToEx(hDC, 910, 280, NULL);
+			LineTo(hDC, 970, 280);
+			LineTo(hDC, 970, 325);
+			LineTo(hDC, 910, 325);
+			LineTo(hDC, 910, 280);
+		}
+	}
+	Sleep(300000);
+	system("pause");
+	return 0;
+}
